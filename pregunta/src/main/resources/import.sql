@@ -1,0 +1,17 @@
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (1, "¿Qué imprime el siguiente código?", "a = 3\nb = \"4\"\nc = a * b\nprint(c)", "444", "baja")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (2, "¿Qué valor se muestra por pantalla?", "a = 8\nb = 15\nc = 7\nd  = a * b / c\nprint(a*b*c*d)", "1440", "baja")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (3, "¿Qué se imprime por pantalla?", "a = \"hola\"\nb = \"mundo\"", "holamundo", "baja")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (4, "¿Cual es el resultado al evaluar en Python?", "", "", "baja")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (5, "¿Cual es el valor que tendría x al finalizar la ejecución?", "x = 3\nx += 5", "8", "baja")
+
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (6, "¿Qué se imprime por pantalla?", "a = 3\nb = a\nif (a<b)\nprint(\"verdadero\")\nelse\nprint(\"falso\")", "falso", "media")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (7, "¿Qué se imprime por pantalla?", "a = 3\nb = a\nif (a<=b)\nprint(\"verdadero\")\nelse\nprint(\"falso\")", "verdadero", "media")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (8, "¿Cual es el resultado al evaluar en Python?", "a = [1,2,3,4]\ni = 0\nwhile(i < len(a)):\n  print(a[i])\n   i = i + 1", "1 2 3 4", "media")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (9, "¿Cual es el nombre de la estructura de datos que se imprime por pantalla?", "a = (1, 2, 3, 4)\nprint(a)", "tupla", "media")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (10, "¿Cual es el nombre de la estructura de datos que se imprime por pantalla?", "a = [1, 2, 3, 4]\nprint(a)", "lista", "media")
+
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (11, "¿Qué se imprime por pantalla?", "a = \"1 2 3 4\"\nb = a.split()\nprint(b)", "['1', '2', '3', '4']", "alta")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (12, "¿Cual es el resultado al evaluar en Python?", "def fun(n):\nreturn n*n\na = [1,2,3,4]\nb=map(fun,a)\nprint(list(b))", "[1, 4, 9, 16]", "alta")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (13, "¿Cual es el resultado al evaluar en Python?", "def fun(n):\n    if n % 2:\n        return True\n   return False\na = [1,2,3,4]\nb=filter(fun,a)\nprint(list(b))", "[1, 3]", "alta")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (14, "¿Qué se imprime por pantalla?","def fun(n):\n    return n*n\ndef fun2(f1,n):\n    return f1(n) + f1(n)\na = 2\nprint(fun2(fun,a))", "8", "alta")
+INSERT INTO preguntas(id, enunciado, codigo, respuesta, dificultad) values (15, "¿Qué se imprime por pantalla al ejecutar este trozo de codigo?", "a = [1,2,3,4]\na[3] = a\nprint(a)", "[1, 2, 3, [...]]", "alta")
