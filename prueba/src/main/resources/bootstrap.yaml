@@ -1,0 +1,21 @@
+spring:
+  devtools:
+    restart:
+      aditional-paths: src/main/java
+  application:
+    name: prueba
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:8081
+  jpa:
+    show-sql: true
+    hibernate:
+      dialect: MySQL8Dialect
+      ddl-auto: create
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbname: pruebas
+    url: jdbc:mysql://localhost:3306/pruebas?autorReconnect=true&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: admin
