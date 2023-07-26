@@ -27,4 +27,4 @@ spring:
         - id: pregunta
           uri: http://localhost:8082
           predicates:
-            - Path=/pregunta/**
+            - Path=/pregunta/dificultad
