@@ -25,6 +25,6 @@ spring:
             allow-credentials: true
       routes:
         - id: pregunta
-          uri: lb://pregunta
+          uri: http://localhost:8082
           predicates:
             - Path=/pregunta/**

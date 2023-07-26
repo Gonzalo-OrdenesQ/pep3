@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.awt.desktop.SystemSleepEvent;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -42,9 +43,14 @@ public class PreguntaService {
         List<PreguntaEntity> preguntas = preguntaRepository.getByDificultad(dificultad);
         ArrayList<PreguntaEntity> salida = new ArrayList<PreguntaEntity>();
         int rn;
-        for (int i = 0; i < 3; i++){
+        ArrayList<Integer> rns = new ArrayList<>();
+        while(rns.size() < 3){
             rn = (int) (Math.random() * (preguntas.size() -1));
-            salida.add(preguntas.get(rn));
+            if (!rns.contains(rn))
+                rns.add(rn);
+        }
+        for (int i = 0; i < 3; i++){
+            salida.add(preguntas.get(rns.get(i)));
         }
         return salida;
     }
