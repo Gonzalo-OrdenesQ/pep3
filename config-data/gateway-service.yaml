@@ -28,7 +28,3 @@ spring:
           uri: lb://pregunta
           predicates:
             -Path=/pregunta/**
-        - id: prueba
-          uri: lb://prueba
-          predicates:
-            -Path=/prueba/**
