@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-//@RequestMapping("/preguntas")
+@RequestMapping("/preguntas")
 public class PreguntaController {
 
     @Autowired
@@ -32,8 +32,8 @@ public class PreguntaController {
     }
 
     @GetMapping("/{dificultad}")
-    public ResponseEntity<List<PreguntaEntity>> getAllByDificultad(@PathVariable("dificultad") String dificultad){
-        List<PreguntaEntity> preguntas = preguntaService.getAllByDificultad(dificultad);
+    public ResponseEntity<List<PreguntaEntity>> getThreeByDificultad(@PathVariable("dificultad") String dificultad){
+        List<PreguntaEntity> preguntas = preguntaService.getThreeByDificultad(dificultad);
         if(preguntas.isEmpty())
             return ResponseEntity.noContent().build();
         return ResponseEntity.ok(preguntas);
