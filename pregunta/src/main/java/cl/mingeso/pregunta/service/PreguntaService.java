@@ -41,6 +41,7 @@ public class PreguntaService {
     @Generated
     public ArrayList<PreguntaEntity> getThreeByDificultad(String dificultad){
         List<PreguntaEntity> preguntas = preguntaRepository.getByDificultad(dificultad);
+        System.out.println(dificultad);
         ArrayList<PreguntaEntity> salida = new ArrayList<PreguntaEntity>();
         int rn;
         ArrayList<Integer> rns = new ArrayList<>();
